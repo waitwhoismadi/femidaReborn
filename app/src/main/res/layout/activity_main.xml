@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/questiontv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:text="@string/question_text"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/trueButton"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:insetRight="24dp"
+            android:text="@string/true_button"
+            android:visibility="invisible"
+            app:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/falseButton"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:insetLeft="24dp"
+            android:text="@string/false_button"
+            android:visibility="invisible"
+            app:backgroundTint="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:visibility="visible"
+            app:backgroundTint="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/useHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cheat"
+            android:visibility="invisible"
+            app:backgroundTint="@color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>
